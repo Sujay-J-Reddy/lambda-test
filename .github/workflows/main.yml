@@ -18,3 +18,11 @@ jobs:
           CI: true
         run: |
           npm ci
+
+      - name: Debugging Info
+        run: |
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
+          echo "Current directory: $(pwd)"
+          ls -la
+
